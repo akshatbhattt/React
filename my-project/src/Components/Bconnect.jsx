@@ -8,7 +8,7 @@ const Bconnect=()=> {
 
   const fetchData = async ()=>{
 
-    await axios.get('http://localhost:8080/car/')
+    await axios.get('https://react-card.onrender.com/car/')
     .then(response =>{
       console.log(response.data)
       setInfo(response.data)})

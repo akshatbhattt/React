@@ -12,7 +12,7 @@ const Form = () => {
 
 
     const handleSubmit = async () => {
-        const url = 'http://localhost:8080/Dog/'; 
+        const url = 'https://react-card.onrender.com/Dog/'; 
 
         const data = {
             name: name,

@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom";
 const Board = ({imgurl,name,_id,setChange}) => {
     const navigate= useNavigate();
         const deletecar = async () => {
-        const url=`http://localhost:8080/car/${_id}`;
+        const url=`https://react-card.onrender.com/car/${_id}`;
         axios.delete(url)
 .then(response =>{console.log('response',response.data);
 setChange(true);

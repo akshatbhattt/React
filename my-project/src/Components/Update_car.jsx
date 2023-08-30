@@ -4,7 +4,7 @@ import axios from "axios";
 
 const Update_car=()=>{
     const{id}=useParams();
-    const url=`http://localhost:8080/car/${id}`;
+    const url=`https://react-card.onrender.com/car/${id}`;
     const navigate=useNavigate();
     const [name,setName] = useState("");
     const [imgurl,setImg]= useState("");
@@ -19,7 +19,7 @@ const Update_car=()=>{
       },[])
     const handlesubmit =async  (e) =>{
         e.preventDefault();
-        const url =`http://localhost:8080/car/${id}`;
+        const url =`https://react-card.onrender.com/car/${id}`;
  
         const data={
          name: name,

@@ -8,7 +8,7 @@ const Home=()=> {
 
   const fetchData = async ()=>{
 
-    await axios.get('http://localhost:8080/Dog/')
+    await axios.get('https://react-card.onrender.com/Dog/')
     .then(response =>{setInfo(response.data)})
     .catch(error => console.log("error:",error.message))
   }
